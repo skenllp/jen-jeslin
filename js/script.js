@@ -71,6 +71,9 @@
       invitation.setAttribute("aria-hidden", "false");
       document.body.classList.remove("locked");
 
+      // Show the floating music toggle button
+      if (muteBtn) muteBtn.style.display = "flex";
+
       // Verify playback has started
       if (audio && audio.paused) {
         playMusic();
